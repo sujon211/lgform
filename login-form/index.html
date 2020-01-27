@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Hello, world!</title>
+
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()"> Log In</button>
+          <button type="button" class="toggle-btn" onclick="Regester()">Regester</button>
+        </div>
+        <div class="social-icon">
+       <i class="fa fa-facebook" aria-hidden="true"></i>
+       <i class="fa fa-twitter"aria-hidden="true"></i>
+       <i class="fa fa-google" aria-hidden="true"></i> 
+      </div>
+      <form id="login" class="infut-group">
+        <input type="text" class="input-field" placeholder="User Id" required>
+        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <input type="checkbox" class="chech-box"><span>Remember Password</span>
+        <button type="submit" class="submit-btn"> Log In</button>
+      </form>
+
+      <form id="Regester" class="infut-group">
+        <input type="text" class="input-field" placeholder="User Id" required>
+        <input type="emil" class="input-field" placeholder="Emil Id" required>
+        <input type="checkbox" class="chech-box"><span>I am agree to the terms & conditions </span>
+        <button type="submit" class="submit-btn"> Register</button>
+      </form>
+
+      </div>
+      
+    </div>
+
+    <script>
+      
+      var x = document.getElementById("login");
+      var y = document.getElementById("Regester");
+      var z = document.getElementById("btn");
+
+      function Regester(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+      function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+      }
+
+    </script>
+
+
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js" ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
